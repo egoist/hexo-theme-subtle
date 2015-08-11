@@ -1,0 +1,16 @@
+header.welcome-screen
+  nav.header-top
+    figure.left-dot
+      a(href="./") #{config.title}
+  nav.user-header
+    - var user_logo_active = theme.user_logo.remove_default ? 'inactive' : 'active'
+    figure(class="user-logo #{user_logo_active}")
+      a(href="./" style="background-image:url(#{theme.user_logo.url})") #{config.title}
+    figure.user-info
+      h2
+        a(href="./") #{config.title}
+      h4
+        | By #{config.author}
+      h3 #{config.description}
+    ul.user-links
+      +user_links()

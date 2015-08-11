@@ -1,0 +1,20 @@
+mixin user_links()
+  each item in theme.user_links
+    - var icon = ''
+    case item
+      when 'blog' 
+        - var url = config.url, text = 'Read My Blog'
+      when 'twitter'
+        - var url = 'https://twitter.com/' + config.twitter, text = '@' + config.twitter
+      when 'weibo'
+        - var url = 'http://weibo.com/' + config.weibo, text = '@' + config.weibo
+      when 'github'
+        - var url = 'https://github.com/' + config.github, text = 'GitHub'
+      when 'instagram'
+        - var url = 'https://instagram.com/' + config.instagram, text = 'Instagram'
+      when 'email'
+        - var url = 'mailto:' + config.email, text = 'Say hi'
+      default
+        - var url = '', text = item
+    li 
+      a.btn(href="#{url}") #{icon} #{text}

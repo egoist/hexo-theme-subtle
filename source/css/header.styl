@@ -1,0 +1,72 @@
+.welcome-screen
+  height 100vmin
+
+.header-top
+  clearfix()
+  figure.left-dot
+    margin 25px
+    display block
+    float left
+    border 4px solid black
+    border-radius 50%
+    size 28px
+    text-indent -9999px
+    text-height 28px
+    text-align center
+    a
+      size 24px
+      display block
+      border-radius 50%
+      text-indent -9999px
+      color white
+      border 2px solid white
+      background-color white
+      background-size 100%
+      dotMixin()
+      &:hover
+        background-color black
+        
+figure.user-logo
+  size 100px
+  margin 0 auto
+  margin-top 25px
+  border 4px solid $blue
+  border-radius 50%
+  a
+    margin 0
+    border-radius 50%
+    background-color $blue
+    display block
+    size 90px
+    border 5px solid white
+    background-size cover
+    text-indent -9999px
+    
+.user-header
+  text-align center
+  h2
+    font-size 29px
+    a
+      color $blue
+  h4
+    color #777
+    text-transform uppercase
+    font-size 14px
+    margin-top 5px
+  h3
+    font-weight 400
+    font-size 20px
+    color #999
+    margin-top 5px
+  figure.user-info
+    margin-top 5px
+  ul.user-links
+    margin 40px 0 0 0
+    clearfix()
+    text-align center
+    list-style none
+    li
+      display inline-block
+      margin 0 5px
+      a
+        font-size 14px

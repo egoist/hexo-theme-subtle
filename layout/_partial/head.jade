@@ -1,0 +1,10 @@
+doctype html
+head
+  meta(charset="utf-8")
+  if is_tag()
+    title #{page.tag} | #{config.title}
+  else if page.title
+    title #{page.title} | #{config.title}
+  else
+    title #{config.title}
+  link(rel="stylesheet" href="#{config.root}css/main.css")

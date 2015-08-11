@@ -1,0 +1,17 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+rss: /atom.xml
+
+# theme config
+color: default
+user_logo:
+  url: https://d1jcp5e5r52ocf.cloudfront.net/radio.png
+  remove_default: false
+# what we support: twitter/github/instagram/email/blog/weibo
+user_links:
+  - twitter
+  - github
+  - email
+  - blog
